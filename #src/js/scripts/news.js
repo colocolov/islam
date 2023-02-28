@@ -1,5 +1,5 @@
 // слайдер на главной
-const materialSlider = new Swiper(".material__slider", {
+const newsSlider = new Swiper(".news__slider", {
   loop: true,
   // autoplay: {
   //   //пауза между прокруткой
@@ -13,26 +13,26 @@ const materialSlider = new Swiper(".material__slider", {
   speed: 800,
   // навигация по стрелкам
   navigation: {
-    nextEl: ".material__btn-next",
-    prevEl: ".material__btn-prev",
+    nextEl: ".news__btn-next",
+    prevEl: ".news__btn-prev",
     // disabledClass: "stories-button__unactive",
     clickable: true,
     // для ппрвильного направления
   },
   pagination: {
-        el: ".material__count",
+        el: ".news__count",
         type: "fraction",
   },
 
   //эффект перехода слайда (только если показ по 1-му слайду)
-  effect: "fade",
-  fadeEffect: {
-    crossFade: true,
-  },
+  // effect: "fade",
+  // fadeEffect: {
+  //   crossFade: true,
+  // },
   // показ кол-ва слайдов (работает, когда откл effect: "fade")
-  // slidesPerView: 2,
+  slidesPerView: 2,
   // расстояние между слайдами
-  // spaceBetween: 200,
+  spaceBetween: 200,
   // отключение прокрутки при наведении мыши
   // on: {
   //   init() {
