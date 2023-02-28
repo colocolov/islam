@@ -112,6 +112,7 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 html {
@@ -533,6 +534,7 @@ input {
   font-size: 100px;
   line-height: 1.2;
   margin-bottom: 15px;
+  text-transform: none;
 }
 .hero__descr {
   font-weight: 400;
@@ -546,6 +548,97 @@ input {
 }
 .hero__btn {
   margin-top: 20px;
+}
+
+.material {
+  padding: 80px 0 40px;
+}
+.material__head {
+  position: relative;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.material__head::before {
+  position: absolute;
+  content: "";
+  bottom: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background-color: #2F2F2F;
+}
+.material__slider {
+  position: relative;
+  background-color: #F6F6F6;
+  color: #2F2F2F;
+  overflow: hidden;
+}
+.material__slide {
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  height: 266px;
+}
+.material__title {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+}
+.material__nav {
+  margin-top: 50px;
+  position: relative;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.material__count {
+  margin: 0 50px;
+  text-align: center;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.material__btn {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.material__btn-prev {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.material__btn-fill {
+  width: 100%;
+  height: 100%;
+}
+.material__btn-next {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 @media (min-width: 992px) {
@@ -566,7 +659,7 @@ input {
   }
 }
 @media (min-width: 992px) {
-  .btn__arrow {
+  .hero__arrow {
     -webkit-animation: move-down 5s infinite linear;
     animation: move-down 5s infinite linear;
   }
