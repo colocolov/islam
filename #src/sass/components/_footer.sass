@@ -1,35 +1,47 @@
 .footer
-  padding-top: 68px
-  padding-bottom: 74px
+  padding-top: 50px
+  padding-bottom: 52px
   background-color: $text
   &__container
+    // display: flex
+
+  &__head
+    color: $bgc
+    &::before
+      background-color: $bgc
+
+  &__content
     display: flex
     align-items: center
     justify-content: space-between
+
   &__logo
     color: $white
     font-family: 'CormorantInfant'
     @include font(500, 24, 29)
 
-  &__form
-    display: flex
-    flex-direction: column
-    flex: 0 1 50%
-    input
-      background: $text url('../images/icons/sprite.svg#arrow-slider') left no-repeat
-      border-bottom: 1px solid $bgc
-      height: 24px
-      padding-left: 40px
-      color: $bgc
-      outline: none
-      // transition: input 0.7s cubic-bezier(0.76, -0.76, 0.25, 1.26)
-      transition: all 0.7s cubic-bezier(0.76, -0.76, 0.25, 1.26)
-    input[type="email"]:active,
-    input[type="email"]:focus
-      background: $text url('../images/icons/sprite.svg#arrow-slider') left 5px top 0 no-repeat
-    label
-      margin-top: 10px
-      color: $bgc
+  &__links
+
+
+  // &__form
+  //   display: flex
+  //   flex-direction: column
+  //   flex: 0 1 50%
+  //   input
+  //     background: $text url('../images/icons/sprite.svg#arrow-slider') left no-repeat
+  //     border-bottom: 1px solid $bgc
+  //     height: 24px
+  //     padding-left: 40px
+  //     color: $bgc
+  //     outline: none
+  //     // transition: input 0.7s cubic-bezier(0.76, -0.76, 0.25, 1.26)
+  //     transition: all 0.7s cubic-bezier(0.76, -0.76, 0.25, 1.26)
+  //   input[type="email"]:active,
+  //   input[type="email"]:focus
+  //     background: $text url('../images/icons/sprite.svg#arrow-slider') left 5px top 0 no-repeat
+  //   label
+  //     margin-top: 10px
+  //     color: $bgc
 
   &__btn
     padding: 13px 29px
