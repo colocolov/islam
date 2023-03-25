@@ -29,6 +29,10 @@
     margin-bottom: 20px
     display: inline-block
     color: $bgc
+    // height: 60px
+    padding-left: 40px
+    background: url('../images/icons/sprite.svg#arrow-slider') left center / 20px no-repeat
+    transition: $cubic
 
   // &__form
   //   display: flex
@@ -63,8 +67,14 @@
 .social
   &__links
     display: flex
+    padding-left: 40px
+    background: url('../images/icons/sprite.svg#arrow-slider') left center / 20px no-repeat
+    transition: $cubic
     li:not(:last-child)
       margin-right: 15px
+    li svg
+      fill: $bgc
+      transition: fill 0.3s ease
     a
       display: flex
       align-items: center
