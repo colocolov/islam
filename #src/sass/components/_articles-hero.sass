@@ -1,0 +1,32 @@
+.articles-hero
+  position: relative
+  // height: 500px
+  &::before
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(47, 47, 47, 0.3)
+
+  &__bg
+    padding-bottom: 500px
+    // img
+    //   object-fit: cover
+
+  &__container
+    // position: absolute
+    // top: 50%
+    // transform: translateY(-50%)
+    margin-top: -77px
+    transform: translateY(-203px)
+
+  &__title
+    position: relative
+    // bottom: 73px
+    // left: 0
+    @include font(700, 100, 120)
+    // z-index: 5
+    color: $bgc
+

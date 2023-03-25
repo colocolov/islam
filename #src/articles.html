@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @include('html/head.html', { "title":"Статьи" })
+  <body>
+    <div class="wrapper">
+      @include('html/header.html')
+
+      <main class="main">
+        @include('html/_articles-hero.html')
+        @include('html/_pagination.html')
+
+      </main>
+      @include('html/footer.html')
+    </div>
+  </body>
+</html>
