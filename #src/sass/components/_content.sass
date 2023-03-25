@@ -1,0 +1,106 @@
+.content
+  padding-top: 100px
+  padding-bottom: 80px
+
+  &__container
+    display: flex
+    flex-direction: column
+
+  &__head
+    font-family: 'CormorantInfant'
+    @include font(700, 100, 120)
+    text-transform: none
+    &:not(:last-child)
+      margin-bottom: 30px
+
+  &__verse-bg
+    align-self: flex-end
+    margin-right: -200px
+    padding: 45px 202px 45px 88px
+    max-width: 690px
+    background: $gradient
+    text-align: right
+    &:not(:last-child)
+      margin-bottom: 80px
+
+  &__place
+    font-family: 'CormorantInfant'
+    @include font(700, 16, 20)
+    display: inline-block
+
+  &__quote
+    position: relative
+    background: $text
+    padding: 77px 69px
+    color: $bgc
+    // font-family: 'Noto Sans Arabic'
+    font-weight: 300
+    &::before
+      position: absolute
+      top: 5px
+      left: 10px
+      content: ""
+      background: url("../images/icons/sprite.svg#quotes") center / cover no-repeat
+      width: 50px
+      height: 50px
+    &::after
+      position: absolute
+      bottom: 5px
+      right: 10px
+      content: ""
+      background: url("../images/icons/sprite.svg#quotes") center / cover no-repeat
+      width: 50px
+      height: 50px
+    &:not(:last-child)
+      margin-bottom: 30px
+
+  &__title
+    &--mt
+      margin-top: 50px
+
+  &__text-colums
+
+    column-width: 48%
+    column-count: 2
+    column-gap: 4%
+
+    // display: flex
+    // flex-direction: row
+    // flex-wrap: wrap
+    // // flex: 1 1 50%
+    // width: 100%
+    &:not(:last-child)
+      margin-bottom: 30px
+    p
+      // display: flex
+      &:not(:last-child)
+        margin-bottom: 30px
+  &__text-img
+    padding-bottom: 178px
+
+  &__text
+    &:not(:last-child)
+      margin-bottom: 118px
+    p:not(:last-child)
+      margin-bottom: 20px
+
+  &__note
+    background: $gradient
+    padding: 50px 80px
+    &:not(:last-child)
+      margin-bottom: 80px
+    p
+      text-align: center
+      max-width: 500px
+      margin: 0 auto
+
+
+  &__verse
+    text-align: right
+    max-width: 515px
+    align-self: flex-end
+
+.heading
+
+.heading-slash
+

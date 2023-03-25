@@ -73,6 +73,13 @@ a:hover {
 
 @font-face {
   font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoSans";
   src: url("../fonts/NotoSans-Medium.woff2") format("woff2");
   font-weight: 500;
   font-display: swap;
@@ -102,8 +109,8 @@ a:hover {
 body {
   font-family: "NotoSans", sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
+  font-size: 18px;
+  line-height: 1.2222222222;
 }
 
 .heading {
@@ -592,7 +599,7 @@ input {
 
 .hero {
   height: 100vh;
-  background: #000;
+  background-color: #000;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -882,6 +889,169 @@ input {
   transform: rotate(-90deg);
 }
 
+.info {
+  height: 100vh;
+  background: -o-linear-gradient(359.74deg, #444444 1.21%, #000000 99.77%);
+  background: linear-gradient(90.26deg, #444444 1.21%, #000000 99.77%);
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+.info__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+.info__text {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 39.7%;
+  flex: 1 1 39.7%;
+  max-width: 39.7%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  color: #F6F6F6;
+}
+.info__text p:not(:last-child) {
+  margin-bottom: 20px;
+}
+.info__arrow {
+  bottom: 0;
+  left: 18%;
+}
+.info__image {
+  width: 499px;
+  padding-bottom: 600px;
+}
+
+.content {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+.content__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.content__head {
+  font-family: "CormorantInfant";
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.2;
+  text-transform: none;
+}
+.content__head:not(:last-child) {
+  margin-bottom: 30px;
+}
+.content__verse-bg {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-right: -200px;
+  padding: 45px 202px 45px 88px;
+  max-width: 690px;
+  background: -webkit-gradient(linear, left top, right top, from(#FFE259), to(transparent)) #FFA751;
+  background: -o-linear-gradient(left, #FFE259 0%, transparent) #FFA751;
+  background: linear-gradient(90deg, #FFE259 0%, transparent) #FFA751;
+  text-align: right;
+}
+.content__verse-bg:not(:last-child) {
+  margin-bottom: 80px;
+}
+.content__place {
+  font-family: "CormorantInfant";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  display: inline-block;
+}
+.content__quote {
+  position: relative;
+  background: #2F2F2F;
+  padding: 77px 69px;
+  color: #F6F6F6;
+  font-weight: 300;
+}
+.content__quote::before {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  content: "";
+  background: url("../images/icons/sprite.svg#quotes") center/cover no-repeat;
+  width: 50px;
+  height: 50px;
+}
+.content__quote::after {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  content: "";
+  background: url("../images/icons/sprite.svg#quotes") center/cover no-repeat;
+  width: 50px;
+  height: 50px;
+}
+.content__quote:not(:last-child) {
+  margin-bottom: 30px;
+}
+.content__title--mt {
+  margin-top: 50px;
+}
+.content__text-colums {
+  -webkit-column-width: 48%;
+  -moz-column-width: 48%;
+  column-width: 48%;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 4%;
+  -moz-column-gap: 4%;
+  column-gap: 4%;
+}
+.content__text-colums:not(:last-child) {
+  margin-bottom: 30px;
+}
+.content__text-colums p:not(:last-child) {
+  margin-bottom: 30px;
+}
+.content__text-img {
+  padding-bottom: 178px;
+}
+.content__text:not(:last-child) {
+  margin-bottom: 118px;
+}
+.content__text p:not(:last-child) {
+  margin-bottom: 20px;
+}
+.content__note {
+  background: -webkit-gradient(linear, left top, right top, from(#FFE259), to(transparent)) #FFA751;
+  background: -o-linear-gradient(left, #FFE259 0%, transparent) #FFA751;
+  background: linear-gradient(90deg, #FFE259 0%, transparent) #FFA751;
+  padding: 50px 80px;
+}
+.content__note:not(:last-child) {
+  margin-bottom: 80px;
+}
+.content__note p {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.content__verse {
+  text-align: right;
+  max-width: 515px;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
 .footer {
   padding-top: 50px;
   padding-bottom: 52px;
@@ -962,7 +1132,6 @@ input {
   .btn:hover, .btn:focus {
     background-color: #FFE058;
   }
-
   .menu__item:hover > a::before {
     width: 100%;
   }
@@ -981,27 +1150,24 @@ input {
     margin-left: 15px;
     margin-right: 7px;
   }
-
   .header__btn:hover {
     background-color: #2F2F2F;
   }
-
   .news__btn-fill:hover,
-.material__btn-fill:hover {
+  .material__btn-fill:hover {
     -webkit-transform: translateY(4px);
     -ms-transform: translateY(4px);
     transform: translateY(4px);
   }
-
   .footer__btn:hover .btn-image {
     margin-left: 15px;
   }
-
   .footer__btn:hover {
     background-color: #2F2F2F;
   }
 }
-.hero__arrow {
+.hero__arrow,
+.info__arrow {
   -webkit-animation: move-down 5s infinite linear;
   animation: move-down 5s infinite linear;
 }
