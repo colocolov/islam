@@ -1,7 +1,7 @@
 .menu
   // margin-left: 50px
   &__body
-    margin-top: -5px
+    // margin-top: -5px
     @media (max-width: 768px)
       position: fixed
       top: 0
@@ -34,25 +34,27 @@
       align-items: flex-start
 
   &__item
-    position: relative
     @include fl-all
     flex-wrap: wrap
     @include font(500, 16, 20)
     color: $bgc
     text-transform: uppercase
     transition: color 0.3s ease
+    // z-index: 15
     &:not(:last-child)
       margin-right: 50px
-    // нижняя линия при наведении
-    &::before
-      position: absolute
-      content: ''
-      display: block
-      bottom: -6px
-      width: 0%
-      height: 2px
-      background-color: $bgc
-      transition: width 0.5s ease
+    a
+      position: relative
+      // нижняя линия при наведении
+      &::before
+        position: absolute
+        content: ''
+        display: block
+        bottom: -6px
+        width: 0%
+        height: 2px
+        background-color: $bgc
+        transition: width 0.5s ease
     &:last-child a
       transition: 0.3s linear
     a
@@ -103,30 +105,41 @@
   //   transition: all 0.5s ease
   //   // transform: rotate(90deg)
 
-  // &__sub-list
-  //   position: relative
-  //   flex: 1 1 100%
-  //   padding: 15px
-  //   background-color: $orange
-  //   @media ( min-width: 768px )
-  //     position: absolute
-  //     left: 0
-  //     top: 100%
-  //     min-width: 50px
-  //     transition: all 0.5s ease
-  //     transform: translate(0px, 10px)
-  //     visibility: hidden
-  //     opacity: 0
-  //     pointer-events: none
-  // &__sub-item
-  //   line-height: 120%
-  //   color: $black
-  //   &:not(:last-child)
-  //     margin-bottom: 5px
-  //   a
-  //     color: $white
-  //     &:hover
-  //       text-decoration: underline
+  &__sub-list
+    position: relative
+    flex: 1 1 100%
+    padding: 15px
+    background-color: #333
+    @media ( min-width: 768px )
+      position: absolute
+      left: -100%
+      top: 60px
+      width: calc(100vw - 20px)
+      height: calc(100vh - 60px)
+      padding: 150px 0
+      transition: all 0.5s ease
+      // transform: translateX(-50%)
+      // visibility: hidden
+      // opacity: 0
+      // pointer-events: none
+      // z-index: 7
+      overflow: hidden
+      display: flex
+      justify-content: center
+      flex-direction: column
+      align-items: center
+      // flex: 1 1 100%
+
+      // transition: all 0.7s cubic-bezier(0.76, -0.76, 0.25, 1.26)
+  &__sub-item
+    font-family: 'CormorantInfant'
+    @include font(400, 40, 48)
+    &:not(:last-child)
+      margin-bottom: 100px
+    a
+      color: $white
+      &:hover
+        text-decoration: underline
 
   &__icon
     display: none

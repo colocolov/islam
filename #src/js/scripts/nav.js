@@ -1,5 +1,8 @@
 // мобильное меню
 
+const acccctiveMenu = document.querySelector(".menu__list>li:hover .menu__sub-list");
+console.log(acccctiveMenu);
+
 //выпадающее меню для мобильных устройств
 document.addEventListener("click", documentActions);
 

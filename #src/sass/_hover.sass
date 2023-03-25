@@ -3,10 +3,18 @@
     background-color: $yellow
 
   .menu__item:hover
-    &::before
+    & > a::before
       width: 100%
     &:last-child a
       // color: $white
+  .menu__list>li:hover .menu__sub-list
+    display: flex
+    left: 0
+    // top: 60px
+    // opacity: 1
+    // visibility: visibility
+  .menu__list>li:hover .header
+    background-color: #333
 
   .header__btn:hover .btn-image
     margin-left: 15px
