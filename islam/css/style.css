@@ -129,6 +129,10 @@ body {
   background-color: #F6F6F6;
   color: #2F2F2F;
 }
+body._lock {
+  overflow: hidden !important;
+  height: 100% !important;
+}
 
 html,
 body {
@@ -289,6 +293,9 @@ input {
   transform: translateX(-50%);
   width: 100%;
 }
+.header--active {
+  background-color: #2F2F2F;
+}
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,9 +389,8 @@ input {
     top: 0;
     right: -100%;
     width: 100%;
-    height: 100%;
     padding: 150px 30px 50px 70px;
-    background-color: rgba(246, 246, 246, 0.9);
+    background-color: rgba(47, 47, 47, 0.9);
     overflow: auto;
     -webkit-transition: right 0.5s ease 0s;
     -o-transition: right 0.5s ease 0s;
@@ -397,7 +403,7 @@ input {
     right: -100%;
     width: 100%;
     height: 74px;
-    background-color: #F6F6F6;
+    background-color: #2F2F2F;
     -webkit-transition: right 0.5s ease 0s;
     -o-transition: right 0.5s ease 0s;
     transition: right 0.5s ease 0s;
@@ -492,6 +498,23 @@ input {
     margin-bottom: 10px;
   }
 }
+.menu__btn {
+  cursor: pointer;
+  background: transparent;
+  color: #F6F6F6;
+  text-transform: uppercase;
+}
+.menu__sub {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.menu__sub--active {
+  opacity: 1;
+  visibility: visible;
+}
 .menu__sub-list {
   position: relative;
   -webkit-box-flex: 1;
@@ -503,14 +526,11 @@ input {
 @media (min-width: 768px) {
   .menu__sub-list {
     position: absolute;
-    left: -100%;
+    left: 0;
     top: 60px;
     width: calc(100vw - 20px);
     height: calc(100vh - 60px);
     padding: 150px 0;
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
     overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1132,16 +1152,10 @@ input {
   .btn:hover, .btn:focus {
     background-color: #FFE058;
   }
+
   .menu__item:hover > a::before {
     width: 100%;
   }
-  .menu__list > li:hover .menu__sub-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    left: 0;
-  }
-
   .menu__list > li:hover .header {
     background-color: #333;
   }
@@ -1150,18 +1164,22 @@ input {
     margin-left: 15px;
     margin-right: 7px;
   }
+
   .header__btn:hover {
     background-color: #2F2F2F;
   }
+
   .news__btn-fill:hover,
-  .material__btn-fill:hover {
+.material__btn-fill:hover {
     -webkit-transform: translateY(4px);
     -ms-transform: translateY(4px);
     transform: translateY(4px);
   }
+
   .footer__btn:hover .btn-image {
     margin-left: 15px;
   }
+
   .footer__btn:hover {
     background-color: #2F2F2F;
   }

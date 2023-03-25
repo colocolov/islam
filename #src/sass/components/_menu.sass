@@ -7,9 +7,9 @@
       top: 0
       right: -100%
       width: 100%
-      height: 100%
+      // height: 100%
       padding: 150px 30px 50px 70px
-      background-color: rgba($bgc,0.9)
+      background-color: rgba($text,0.9)
       overflow: auto
       transition: right 0.5s ease 0s
       &::before
@@ -19,7 +19,7 @@
         right: -100%
         width: 100%
         height: 74px
-        background-color: $bgc
+        background-color: $text
         transition: right 0.5s ease 0s
         z-index: 2
     &._active
@@ -105,6 +105,20 @@
   //   transition: all 0.5s ease
   //   // transform: rotate(90deg)
 
+  &__btn
+    cursor: pointer
+    background: transparent
+    color: $bgc
+    text-transform: uppercase
+
+  &__sub
+    opacity: 0
+    visibility: hidden
+    transition: all 0.5s ease
+    &--active
+      opacity: 1
+      visibility: visible
+
   &__sub-list
     position: relative
     flex: 1 1 100%
@@ -112,12 +126,11 @@
     background-color: #333
     @media ( min-width: 768px )
       position: absolute
-      left: -100%
+      left: 0
       top: 60px
       width: calc(100vw - 20px)
       height: calc(100vh - 60px)
       padding: 150px 0
-      transition: all 0.5s ease
       // transform: translateX(-50%)
       // visibility: hidden
       // opacity: 0
