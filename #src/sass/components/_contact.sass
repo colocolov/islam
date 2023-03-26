@@ -1,0 +1,127 @@
+.contact
+  padding: 80px 0
+  &__container
+
+  &__head
+    margin-bottom: 80px
+
+  &__wrap
+    display: flex
+    margin-bottom: 80px
+
+  &__form
+    margin-right: 85px
+    display: flex
+    flex-wrap: wrap
+    gap: 20px
+
+
+  &__line
+    flex: 1 1 48%
+    height: 64px
+  &__input
+    border: 2px solid $black
+    transition: border 0.3s ease
+    height: 60px
+    width: 100%
+    padding: 20px
+    background-color: transparent
+    color: $text
+    outline: none
+    &::placeholder
+      text-transform: uppercase
+      transition: color 0.3s ease
+      font-size: 16px
+      line-height: 1.2
+      color: $black
+
+  &__text
+    flex: 1 1 100%
+    height: 304px
+    color: $text
+    position: relative
+  &__textarea
+    border: 2px solid $black
+    transition: border 0.3s ease
+    padding: 20px
+    height: 304px
+    width: 100%
+    background-color: transparent
+    outline: none
+    resize: none
+    &::placeholder
+      transition: color 0.3s ease
+      transform: translateY(240px)
+      text-transform: uppercase
+      font-size: 16px
+      line-height: 1.2
+      color: $black
+
+  &__send
+    background-color: transparent
+    position: absolute
+    bottom: 20px
+    right: 58px
+    fill: $text
+    z-index: 1
+    cursor: pointer
+    transition: fill 0.3s ease
+    svg
+      width: 39px
+      height: 39px
+
+  &__social
+    align-self: flex-end
+
+  &__links
+    display: flex
+    flex-direction: column
+    li
+      &:not(:last-child)
+        margin-bottom: 65px
+    a
+      display: flex
+      align-items: center
+      font-size: 36px
+      line-height: 1.2
+      color: $text
+      transition: color 0.3s ease
+    svg
+      width: 40px
+      height: 40px
+      margin-right: 15px
+      fill: $text
+      transition: fill 0.3s ease
+
+  &__data
+    padding: 40px 60px
+    background: linear-gradient(360deg, #FFE259 0%, transparent) #FFA751
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-family: 'CormorantInfant'
+
+  &__info
+    @include font(700, 38, 46)
+    color: $text
+    a
+      color: inherit
+      transition: all 0.3s ease
+
+  &__email
+    display: inline-block
+
+  &__tel
+    display: inline-block
+
+  &__country
+    @include font(700, 90, 108)
+    color: $bgc
+    text-transform: uppercase
+
+.heading
+
+.social
+  &__links
+
+
