@@ -56,13 +56,16 @@
 
   &__btn
     padding: 13px 29px
-    padding-right: 0
+    // padding-right: 0
     color: $yellow
     text-transform: uppercase
     background: $text
     @include font(700, 20, 24)
     display: flex
     align-items: center
+    svg
+      fill: $yellow
+      transition: fill 0.5s ease
 
 .social
   &__links

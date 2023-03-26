@@ -251,9 +251,9 @@ input {
   line-height: 1.25;
   text-align: center;
   text-transform: uppercase;
-  -webkit-transition: background-color 1s;
-  -o-transition: background-color 1s;
-  transition: background-color 1s;
+  -webkit-transition: background-color 1s, color 0.5s;
+  -o-transition: background-color 1s, color 0.5s;
+  transition: background-color 1s, color 0.5s;
 }
 .btn-image {
   width: 25px;
@@ -332,6 +332,12 @@ input {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.header__btn svg {
+  -webkit-transition: fill 0.5s ease;
+  -o-transition: fill 0.5s ease;
+  transition: fill 0.5s ease;
+  fill: #FFE058;
 }
 .header__search {
   display: -webkit-box;
@@ -1297,9 +1303,17 @@ input {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  overflow: hidden;
 }
 .library__img {
   padding-bottom: 100%;
+}
+.library__img img {
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  -o-transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
 }
 .library__data {
   position: absolute;
@@ -1761,7 +1775,6 @@ input {
 }
 .footer__btn {
   padding: 13px 29px;
-  padding-right: 0;
   color: #FFE058;
   text-transform: uppercase;
   background: #2F2F2F;
@@ -1774,6 +1787,12 @@ input {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.footer__btn svg {
+  fill: #FFE058;
+  -webkit-transition: fill 0.5s ease;
+  -o-transition: fill 0.5s ease;
+  transition: fill 0.5s ease;
 }
 
 .social__links {
@@ -1820,24 +1839,20 @@ input {
   .menu__btn:hover::before {
     width: 100%;
   }
-  .header__btn:hover .btn-image {
-    margin-left: 15px;
-    margin-right: 7px;
+  .header__btn:hover,
+  .footer__btn:hover {
+    background-color: #FFCA3C;
+    color: #2F2F2F;
   }
-  .header__btn:hover {
-    background-color: #2F2F2F;
+  .header__btn:hover svg,
+  .footer__btn:hover svg {
+    fill: #2F2F2F;
   }
   .news__btn-fill:hover,
   .material__btn-fill:hover {
     -webkit-transform: translateY(4px);
     -ms-transform: translateY(4px);
     transform: translateY(4px);
-  }
-  .footer__btn:hover .btn-image {
-    margin-left: 15px;
-  }
-  .footer__btn:hover {
-    background-color: #2F2F2F;
   }
   .footer__email:hover {
     background-position: 5px center;
@@ -1855,6 +1870,11 @@ input {
   .post__data a:hover {
     color: #FFCA3C;
     text-shadow: 1px 1px 0 rgba(47, 47, 47, 0.6);
+  }
+  .library__info:hover img {
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
   }
   .library__left a:hover {
     color: #FFCA3C;

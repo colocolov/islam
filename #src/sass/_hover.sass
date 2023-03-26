@@ -10,22 +10,21 @@
   .menu__btn:hover::before
     width: 100%
 
-
-
-  .header__btn:hover .btn-image
-    margin-left: 15px
-    margin-right: 7px
-  .header__btn:hover
-    background-color: $text
+  .header__btn:hover,
+  .footer__btn:hover
+    background-color: $orange
+    color: $text
+    svg
+      fill: $text
 
   .news__btn-fill:hover,
   .material__btn-fill:hover
     transform: translateY(4px)
 
-  .footer__btn:hover .btn-image
-    margin-left: 15px
-  .footer__btn:hover
-    background-color: $text
+  // .footer__btn:hover .btn-image
+  //   margin-left: 15px
+  // .footer__btn:hover
+  //   background-color: $text
   .footer__email:hover
     background-position: 5px center
   .social__links:hover
@@ -40,6 +39,9 @@
   .post__data a:hover
     color: $orange
     text-shadow: 1px 1px 0 rgba($text, 0.6)
+
+  .library__info:hover img
+    transform: scale(1.07)
 
   .library__left a:hover
     color: $orange
