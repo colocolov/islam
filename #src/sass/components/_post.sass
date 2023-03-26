@@ -1,0 +1,72 @@
+.post
+  &__wrap
+    display: flex
+    flex-direction: column
+    position: relative
+    &:not(:last-child)
+      margin-bottom: 40px
+    &:nth-child(3n+2)
+      &::after
+        position: absolute
+        top: 200px
+        left: 50%
+        transform: translateX(-50%)
+        content: ""
+        width: 100vw
+        height: 500px
+        background: $gradient
+        z-index: -1
+
+  &__info
+    display: flex
+    // align-items: flex-start
+    margin-bottom: 10px
+
+  &__img
+    padding-bottom: 400px
+    width: 400px
+    margin-right: 100px
+    flex-shrink: 0
+
+  &__data
+    display: flex
+    flex-direction: column
+    flex: 1 1 auto
+    a
+      color: $text
+      transition: color 0.3s ease
+
+
+  &__title
+    font-family: 'CormorantInfant'
+    @include font(600, 40, 48)
+    margin-bottom: 20px
+
+  &__descr
+    line-height: 1.9
+    // height: 100%
+    flex: 1 1 auto
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 5
+    overflow: hidden
+    &:not(:last-child)
+      margin-bottom: 10px
+
+  &__icon
+    display: inline-flex
+    flex-direction: column
+    align-items: center
+    color: $orange
+    align-self: flex-end
+    font-size: 16px
+    padding: 19px
+    background: $text
+    border-radius: 10px
+    svg
+      width: 40px
+      height: 40px
+
+  &__date
+    @include font(500, 20, 24)
