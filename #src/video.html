@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @include('html/head.html', { "title":"Видео материал" })
+  <body>
+    <div class="wrapper">
+      @include('html/header.html')
+
+      <main class="main">
+        @include('html/_video-hero.html')
+        @include('html/_pagination.html')
+        @include('html/_video-posts.html')
+        @include('html/_pagination-btm.html')
+
+      </main>
+      @include('html/footer.html')
+    </div>
+  </body>
+</html>
