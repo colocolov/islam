@@ -1,4 +1,16 @@
 // слайдер на главной
+
+let numberSlider = 2;
+let spaceSlider = 200;
+
+if (window.innerWidth < 992) {
+  numberSlider = 2;
+  spaceSlider = 100;
+} if (window.innerWidth < 769) {
+  numberSlider = 1;
+  spaceSlider = 0;
+}
+
 const newsSlider = new Swiper(".news__slider", {
   loop: true,
   // autoplay: {
@@ -30,9 +42,9 @@ const newsSlider = new Swiper(".news__slider", {
   //   crossFade: true,
   // },
   // показ кол-ва слайдов (работает, когда откл effect: "fade")
-  slidesPerView: 2,
+  slidesPerView: numberSlider,
   // расстояние между слайдами
-  spaceBetween: 200,
+  spaceBetween: spaceSlider,
   // отключение прокрутки при наведении мыши
   // on: {
   //   init() {

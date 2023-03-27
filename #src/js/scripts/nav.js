@@ -60,6 +60,7 @@ menuBtn.forEach(el => {
   el.addEventListener('click', (e) => {
     let currentBtn = e.currentTarget;
     let drop = currentBtn.closest('.menu__item').querySelector('.menu__sub');
+    // console.log(drop);
 
     subMenus.forEach(el => {
       if (el !== drop) {
@@ -95,6 +96,7 @@ if (iconMenu) {
   iconMenu.addEventListener("click", () => {
     document.body.classList.toggle("_lock");
     iconMenu.classList.toggle("_active");
+    subMenu.classList.toggle("_active");
     menuBody.classList.toggle("_active");
   });
 }
@@ -103,6 +105,7 @@ menuLink.forEach((item) => {
   item.addEventListener("click", () => {
     document.body.classList.remove("_lock");
     iconMenu.classList.remove("_active");
+    subMenu.classList.toggle("_active");
     menuBody.classList.remove("_active");
   });
 });
