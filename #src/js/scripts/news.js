@@ -4,7 +4,7 @@ let numberSlider = 2;
 let spaceSlider = 200;
 
 if (window.innerWidth < 992) {
-  numberSlider = 2;
+  // numberSlider = 2;
   spaceSlider = 100;
 } if (window.innerWidth < 769) {
   numberSlider = 1;

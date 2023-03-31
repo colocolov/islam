@@ -1,9 +1,9 @@
 .about
   padding: 40px 0
 
-  &__container
+  // &__container
 
-  &__head
+  // &__head
 
   &__info
     display: flex
@@ -11,18 +11,18 @@
     align-items: center
 
   &__text
-    max-width: 400px
     position: relative
     flex: 1 1 48%
+    max-width: 400px
     margin-right: 30px
     &::before
       position: absolute
-      left: 0
-      bottom: 140px
       content: ''
+      bottom: 140px
+      left: 0
       width: 2px
-      background-color: $text
       height: 50px
+      background-color: $text
     p:not(:last-child)
       margin-bottom: 20px
 
@@ -31,7 +31,7 @@
     margin-top: 210px
 
   &__img
+    flex: 1 1 48%
     max-width: 400px
     padding-bottom: 60%
-    flex: 1 1 48%
 

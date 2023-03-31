@@ -344,10 +344,10 @@ let done = gulp.series(
   cleanDist,
   gulp.parallel(
     cssBuild,
-    cssAdd,
+    // cssAdd,
     htmlBuild,
     jsBuild,
-    jsAdd,
+    // jsAdd,
     fonts,
     images,
     svgSprit

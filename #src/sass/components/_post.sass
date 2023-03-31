@@ -1,21 +1,21 @@
 .post
   &__wrap
+    position: relative
     display: flex
     flex-direction: column
-    position: relative
     &:not(:last-child)
       margin-bottom: 40px
     &:nth-child(3n+2)
       &::after
+        content: ""
         position: absolute
         top: 200px
         left: 50%
-        transform: translateX(-50%)
-        content: ""
         width: 100vw
         height: 500px
         background: $gradient
         z-index: -1
+        transform: translateX(-50%)
 
   &__info
     display: flex
@@ -25,22 +25,22 @@
   &__image
     // width: 400px
     // width: 100%
-    margin-right: 100px
     display: flex
     flex-direction: column
+    margin-right: 100px
 
   &__img
+    width: 400px
     padding-bottom: 100%
     margin-bottom: 10px
     // flex-shrink: 0
     // flex: 1 1 auto
-    width: 400px
     &--study
       flex-shrink: 0
-      padding-bottom: 40%
+      align-self: flex-start
       margin-right: 80px
       margin-bottom: 0
-      align-self: flex-start
+      padding-bottom: 40%
 
   &__data
     display: flex
@@ -52,18 +52,18 @@
 
 
   &__title
+    margin-bottom: 20px
     font-family: 'CormorantInfant'
     @include font(600, 40, 48)
-    margin-bottom: 20px
 
   &__descr
-    line-height: 1.9
     // height: 100%
     flex: 1 1 auto
     text-overflow: ellipsis
     display: -webkit-box
     -webkit-box-orient: vertical
     -webkit-line-clamp: 5
+    line-height: 1.9
     overflow: hidden
     &:not(:last-child)
       margin-bottom: 10px
@@ -72,12 +72,12 @@
     display: inline-flex
     flex-direction: column
     align-items: center
-    color: $orange
     align-self: flex-end
-    font-size: 16px
     padding: 19px
-    background: $text
     border-radius: 10px
+    background: $text
+    color: $orange
+    font-size: 16px
     svg
       width: 40px
       height: 40px

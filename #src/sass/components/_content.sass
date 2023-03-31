@@ -15,42 +15,42 @@
 
   &__verse-bg
     align-self: flex-end
+    max-width: 690px
     margin-right: -200px
     padding: 45px 202px 45px 88px
-    max-width: 690px
     background: $gradient
     text-align: right
     &:not(:last-child)
       margin-bottom: 80px
 
   &__place
+    display: inline-block
     font-family: 'CormorantInfant'
     @include font(700, 16, 20)
-    display: inline-block
 
   &__quote
     position: relative
-    background: $text
     padding: 77px 69px
     color: $bgc
-    // font-family: 'Noto Sans Arabic'
     font-weight: 300
+    // font-family: 'Noto Sans Arabic'
+    background: $text
     &::before
       position: absolute
+      content: ""
       top: 5px
       left: 10px
-      content: ""
-      background: url("../images/icons/sprite.svg#quotes") center / cover no-repeat
       width: 50px
       height: 50px
+      background: url("../images/icons/sprite.svg#quotes") center / cover no-repeat
     &::after
       position: absolute
+      content: ""
       bottom: 5px
       right: 10px
-      content: ""
-      background: url("../images/icons/sprite.svg#quotes") center / cover no-repeat
       width: 50px
       height: 50px
+      background: url("../images/icons/sprite.svg#quotes") center / cover no-repeat
     &:not(:last-child)
       margin-bottom: 30px
 
@@ -59,7 +59,6 @@
       margin-top: 50px
 
   &__text-colums
-
     column-width: 48%
     column-count: 2
     column-gap: 4%
@@ -85,22 +84,22 @@
       margin-bottom: 20px
 
   &__note
-    background: $gradient
     padding: 50px 80px
+    background: $gradient
     &:not(:last-child)
       margin-bottom: 80px
     p
-      text-align: center
-      max-width: 500px
       margin: 0 auto
+      max-width: 500px
+      text-align: center
 
 
   &__verse
-    text-align: right
-    max-width: 515px
     align-self: flex-end
+    max-width: 515px
+    text-align: right
 
-.heading
+// .heading
 
-.heading-slash
+// .heading-slash
 

@@ -8,9 +8,9 @@
 
 
 .page-numbers
-  @include font(400, 24, 51)
   position: relative
   display: inline-block
+  @include font(400, 24, 51)
   color: $text
   transition: color 0.3s ease
   &.current
@@ -19,9 +19,9 @@
       content: ''
       top: 6px
       left: -13px
-      border: 2px solid $text
-      border-radius: 50%
       width: 40px
       height: 40px
+      border: 2px solid $text
+      border-radius: 50%
   &:not(:last-child)
     margin-right: 30px

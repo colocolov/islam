@@ -231,5 +231,3 @@ const newsSlider = new Swiper(".news__slider", {
   //
 });
 //----- END
-
-//# sourceMappingURL=main.min.js.map

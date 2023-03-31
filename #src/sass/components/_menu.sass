@@ -108,12 +108,12 @@
 
   &__btn
     position: relative
-    cursor: pointer
     background: transparent
     color: $bgc
     text-transform: uppercase
+    cursor: pointer
     outline: none
-    @media (max-width: 768px)
+    // @media (max-width: 768px) // отключил после чистки
     @media (min-width: 768px)
       &::before
         position: absolute
@@ -153,6 +153,10 @@
     background-color: $text
     @media ( min-width: 768px )
       position: absolute
+      display: flex
+      justify-content: center
+      flex-direction: column
+      align-items: center
       left: 0
       top: 60px
       width: 99vw
@@ -165,10 +169,6 @@
       // pointer-events: none
       // z-index: 7
       // overflow: hidden
-      display: flex
-      justify-content: center
-      flex-direction: column
-      align-items: center
       // flex: 1 1 100%
 
       // transition: all 0.7s cubic-bezier(0.76, -0.76, 0.25, 1.26)

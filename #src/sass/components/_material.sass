@@ -8,20 +8,20 @@
     overflow: hidden
   &__slide
     position: relative
-    overflow: hidden
     display: flex
     flex-direction: column
+    height: 40%
+    overflow: hidden
     // align-items: center
     // background-position: center
     // background-repeat: no-repeat
     // background-size: cover
     // width: 100%
-    height: 40%
   &__name
     position: absolute
-    width: calc(100% - 50px)
     bottom: 8%
     left: 50px
+    width: calc(100% - 50px)
     // transform: translateX(-50%)
     color: $white
     @include font(700, 60, 72)
@@ -31,9 +31,10 @@
     align-items: center
   &__title
     // position: relative
-    @include font(700, 64, 77)
-    margin-right: 50px
     flex-shrink: 0
+    margin-right: 50px
+    max-width: 85%
+    @include font(700, 64, 77)
     // text-transform: none
     // &::before
     //   position: absolute
@@ -48,10 +49,10 @@
     height: 2px
     background-color: $bgc
   &-btn
+    margin-top: 30px
     font-family: 'NotoSans'
     @include font(700, 16, 19)
     color: $text !important
-    margin-top: 30px
   &__img
     padding-bottom: 40%
     &::before
@@ -65,22 +66,22 @@
       opacity: 0.7
       z-index: 3
   &__nav
-    margin-top: 50px
     position: relative
-    height: 40px
     display: flex
     align-content: center
     justify-content: center
+    height: 40px
+    margin-top: 50px
   &__count
-    margin: 0 35px
-    text-align: center
-    width: 50px
     display: flex
     align-items: center
     justify-content: center
+    width: 50px
+    margin: 0 35px
+    text-align: center
   &__btn
-    height: 40px
     width: 40px
+    height: 40px
     cursor: pointer
     &-prev
       transform: rotate(90deg)

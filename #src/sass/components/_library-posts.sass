@@ -9,9 +9,9 @@
 
   // записи
   &__wrap
-    padding: 0 15px
     flex: 1 1 50%
     min-width: 290px
+    padding: 0 15px
   &__info
     position: relative
     display: flex
@@ -25,22 +25,22 @@
 
   &__data
     position: absolute
+    display: flex
+    justify-content: space-between
+    align-items: center
     bottom: 0
     left: 0
     width: 100%
     min-height: 150px
+    padding: 20px
     color: $bgc
     background-color: rgba($black, 0.8)
-    display: flex
-    justify-content: space-between
-    align-items: center
-    padding: 20px
 
   &__left
-    font-size: 20px
-    line-height: 1.2
     flex: 1 1 auto
     margin-right: 25px
+    font-size: 20px
+    line-height: 1.2
     a
       color: $bgc
       transition: color 0.3s ease

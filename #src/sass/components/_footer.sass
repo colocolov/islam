@@ -2,7 +2,7 @@
   padding-top: 50px
   padding-bottom: 52px
   background-color: $text
-  &__container
+  // &__container
     // display: flex
 
   &__head
@@ -16,21 +16,21 @@
     justify-content: space-between
 
   &__logo
-    color: $white
+    flex-shrink: 0
     font-family: 'CormorantInfant'
     @include font(500, 24, 29)
-    flex-shrink: 0
+    color: $white
 
-  &__links
+  // &__links
     // display: flex
     // flex-direction: column
 
   &__email
-    margin-bottom: 20px
     display: inline-block
-    color: $bgc
+    margin-bottom: 20px
     // height: 60px
     padding-left: 40px
+    color: $bgc
     background: url('../images/icons/sprite.svg#arrow-slider') left center / 20px no-repeat
     transition: $cubic
 
@@ -55,14 +55,14 @@
   //     color: $bgc
 
   &__btn
-    padding: 13px 29px
-    // padding-right: 0
-    color: $yellow
-    text-transform: uppercase
-    background: $text
-    @include font(700, 20, 24)
     display: flex
     align-items: center
+    padding: 13px 29px
+    // padding-right: 0
+    @include font(700, 20, 24)
+    text-transform: uppercase
+    color: $yellow
+    background: $text
     svg
       fill: $yellow
       transition: fill 0.5s ease

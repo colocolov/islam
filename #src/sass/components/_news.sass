@@ -1,11 +1,11 @@
 .news
   padding: 80px 0 40px
-  &__container
+  // &__container
     // box-sizing: border-box
     // width: 100%
     // display: flex
     // justify-content: center
-  &__head
+  // &__head
 
   &__slider
     position: relative
@@ -16,14 +16,14 @@
     overflow: hidden
   &__slide
     position: relative
+    width: 400px
+    height: 266px
     overflow: hidden
     // display: flex
     // align-items: center
     // background-position: center
     // background-repeat: no-repeat
     // background-size: cover
-    width: 400px
-    height: 266px
     // &::before
     //   content: ''
     //   position: absolute
@@ -38,26 +38,26 @@
     position: absolute
     bottom: 50%
     left: 50%
-    transform: translate(-50%, 50%)
     color: $white
     @include font(700, 60, 72)
+    transform: translate(-50%, 50%)
   &__img
     height: 266px
 
   &__nav
-    margin-top: 50px
     position: relative
-    height: 40px
     display: flex
     align-content: center
     justify-content: center
+    margin-top: 50px
+    height: 40px
   &__count
-    margin: 0 35px
-    text-align: center
-    width: 50px
     display: flex
     align-items: center
     justify-content: center
+    width: 50px
+    margin: 0 35px
+    text-align: center
 
 
   &__btn

@@ -2,17 +2,17 @@
   position: absolute
   top: 0
   left: 50%
-  padding: 25px 0
-  z-index: 2
-  transform: translateX(-50%)
   width: 100%
+  padding: 25px 0
+  transform: translateX(-50%)
+  z-index: 2
   &--active
     background-color: $text
     transition: all 0.5s ease
   &__container
     @include fl-all
 
-  &__menu
+  // &__menu
 
   &__right
     display: flex
@@ -20,51 +20,50 @@
     // z-index: 15
 
   &__btn
+    display: flex
+    align-items: center
     padding: 13px 29px
+    @include font(700, 20, 24)
     color: $yellow
     text-transform: uppercase
     background: $text
-    @include font(700, 20, 24)
-    display: flex
-    align-items: center
     svg
-      transition: fill 0.5s ease
       fill: $yellow
-
+      transition: fill 0.5s ease
 
   &__search
+    position: relative
     display: flex
     align-items: center
-    position: relative
     height: 50px
     margin-left: 50px
 
     &-btn
+      position: absolute
+      bottom: 0
+      right: 0
       height: 24px
       width: 24px
       background: url(../images/icons/sprite.svg#search) center no-repeat
-      position: absolute
       fill: $bgc
-      bottom: 0
-      right: 0
       transform: translateY(-50%)
-      z-index: 2
       transition: all 0.7s cubic-bezier(0.76, -0.76, 0.25, 1.26)
       cursor: pointer
+      z-index: 2
 
     &-input
+      width: 24px
+      height: 100%
       background-color: transparent
       border: none
       // border-bottom: 1px solid #fff
-      outline: none
       // padding: 20px
       // font-size: 24px
-      height: 100%
       // z-index: 2
-      width: 24px
       transition: all 0.7s cubic-bezier(0.76, -0.76, 0.25, 1.26)
-      z-index: 3
+      outline: none
       cursor: pointer
+      z-index: 3
       &:focus
         width: 200px
         padding: 10px 30px 10px 20px
@@ -72,9 +71,9 @@
         background-color: $bgc
         cursor: auto
         & + .header__search-btn
-          z-index: 4
           right: 5px
           background: url(../images/icons/sprite.svg#search-dark) center no-repeat
+          z-index: 4
   // width: 100%
 
 
