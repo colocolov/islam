@@ -80,17 +80,19 @@ const header = document.querySelector('.header');
 // });
 // закрытие при клике вне меню
 document.addEventListener('click', (e) => {
-  if(!e.target.closest('.menu__list')){
+  if (window.innerWidth > 768) {
+    if(!e.target.closest('.menu__list')){
 
-    // subMenus.forEach(el => {
+      // subMenus.forEach(el => {
         subMenu.classList.remove('_active');
-    // });
-    // menuBtn.forEach(el => {
-        menuBtn.classList.remove('menu__btn--active');
-    // });
-    header.classList.remove('header--active');
-  }
-  console.log();
+        // });
+        // menuBtn.forEach(el => {
+          menuBtn.classList.remove('menu__btn--active');
+          // });
+          header.classList.remove('header--active');
+        }
+      }
+  // console.log();
 });
 
 // меню бургер
