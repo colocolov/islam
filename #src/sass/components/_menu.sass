@@ -113,8 +113,9 @@
     text-transform: uppercase
     cursor: pointer
     outline: none
-    // @media (max-width: 768px) // отключил после чистки
-    @media (min-width: 768px)
+    @media (max-width: 768px) // отключил после чистки
+      margin-bottom: 15px
+    @media (min-width: 769px)
       &::before
         position: absolute
         content: ''
@@ -151,7 +152,7 @@
     flex: 1 1 100%
     padding: 15px
     background-color: $text
-    @media ( min-width: 768px )
+    @media ( min-width: 769px )
       position: absolute
       display: flex
       justify-content: center

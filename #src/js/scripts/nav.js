@@ -80,7 +80,7 @@ const header = document.querySelector('.header');
 // });
 // закрытие при клике вне меню
 document.addEventListener('click', (e) => {
-  if (window.innerWidth > 768) {
+  if (window.innerWidth > 769) {
     if(!e.target.closest('.menu__list')){
 
       // subMenus.forEach(el => {
