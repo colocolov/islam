@@ -1,6 +1,7 @@
 .video
   &-posts
     margin-bottom: 80px
+    // margin-top: 80px
     &__wrap
       display: flex
       flex-wrap: wrap
@@ -12,6 +13,10 @@
     flex: 1 1 50%
     min-width: 290px
     padding: 0 15px
+    @media ( min-width: 992px )
+      max-width: 515px
+    @media ( min-width: 769px )
+      max-width: 50%
   &__info
     // position: relative
     display: flex

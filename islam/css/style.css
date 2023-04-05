@@ -276,6 +276,7 @@ input {
 
 .unvisible {
   position: absolute;
+  top: 0;
   left: -3000px;
   width: 0;
   height: 0;
@@ -730,6 +731,12 @@ input {
   height: 266px;
   overflow: hidden;
 }
+.news__slide a .news__title {
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
 .news__title {
   position: absolute;
   bottom: 50%;
@@ -741,9 +748,23 @@ input {
   -webkit-transform: translate(-50%, 50%);
   -ms-transform: translate(-50%, 50%);
   transform: translate(-50%, 50%);
+  text-transform: none;
+  width: 90%;
+  text-align: center;
+  font-size: 42px;
 }
 .news__img {
+  position: relative;
   height: 266px;
+}
+.news__img::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .news__nav {
   position: relative;
@@ -967,7 +988,6 @@ input {
 }
 
 .info {
-  height: 100vh;
   background: -o-linear-gradient(359.74deg, #444444 1.21%, #000000 99.77%);
   background: linear-gradient(90.26deg, #444444 1.21%, #000000 99.77%);
   padding-top: 200px;
@@ -1200,12 +1220,6 @@ input {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
-.post__data a {
-  color: #2F2F2F;
-  -webkit-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
 .post__title {
   margin-bottom: 20px;
   font-family: "CormorantInfant";
@@ -1246,10 +1260,17 @@ input {
   background: #2F2F2F;
   color: #FFCA3C;
   font-size: 16px;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 .post__icon svg {
   width: 40px;
   height: 40px;
+  fill: #FFCA3C;
+  -webkit-transition: fill 0.3s ease;
+  -o-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
 }
 .post__date {
   font-weight: 500;
@@ -1316,6 +1337,16 @@ input {
   flex: 1 1 50%;
   min-width: 290px;
   padding: 0 15px;
+}
+@media (min-width: 992px) {
+  .library__wrap {
+    max-width: 515px;
+  }
+}
+@media (min-width: 769px) {
+  .library__wrap {
+    max-width: 50%;
+  }
 }
 .library__info {
   position: relative;
@@ -1395,10 +1426,17 @@ input {
   font-size: 16px;
   line-height: 1.2;
   color: #FFCA3C;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 .library__icon svg {
   width: 48px;
   height: 48px;
+  fill: #FFCA3C;
+  -webkit-transition: fill 0.3s ease;
+  -o-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
 }
 
 .video-posts {
@@ -1419,6 +1457,16 @@ input {
   flex: 1 1 50%;
   min-width: 290px;
   padding: 0 15px;
+}
+@media (min-width: 992px) {
+  .video__wrap {
+    max-width: 515px;
+  }
+}
+@media (min-width: 769px) {
+  .video__wrap {
+    max-width: 50%;
+  }
 }
 .video__info {
   display: -webkit-box;
@@ -1733,9 +1781,6 @@ input {
   justify-content: center;
   padding: 44px 0;
 }
-.navigation__container {
-  margin-bottom: 80px;
-}
 
 .page-numbers {
   position: relative;
@@ -1860,10 +1905,6 @@ input {
 }
 
 @media (min-width: 992px) {
-  .btn:hover, .btn:focus {
-    background-color: #FFE058;
-  }
-
   .menu__item:hover > a::before {
     width: 100%;
   }
@@ -1888,6 +1929,10 @@ input {
     transform: translateY(4px);
   }
 
+  .news__slide a:hover .news__title {
+    color: #FFE058;
+  }
+
   .footer__email:hover,
 .social__links:hover {
     background-position: 5px center;
@@ -1899,9 +1944,16 @@ input {
     fill: #FFCA3C;
   }
 
+  .post__icon:hover,
+.library__icon:hover {
+    color: #FFFFFF;
+  }
+  .post__icon:hover svg,
+.library__icon:hover svg {
+    fill: #FFFFFF;
+  }
+
   .page-numbers:hover,
-.post__data a:hover,
-.library__left a:hover,
 .video__data:hover a {
     color: #FFCA3C;
     text-shadow: 1px 1px 0 rgba(47, 47, 47, 0.6);

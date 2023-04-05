@@ -12,6 +12,12 @@
     flex: 1 1 50%
     min-width: 290px
     padding: 0 15px
+    @media ( min-width: 992px )
+      max-width: 515px
+    @media ( min-width: 769px )
+      max-width: 50%
+
+
   &__info
     position: relative
     display: flex
@@ -61,7 +67,10 @@
     font-size: 16px
     line-height: 1.2
     color: $orange
+    transition: color 0.3s ease
     svg
       width: 48px
       height: 48px
+      fill: $orange
+      transition: fill 0.3s ease
 

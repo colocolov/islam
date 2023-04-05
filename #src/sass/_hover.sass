@@ -1,5 +1,6 @@
 @media ( min-width: 992px )
-  .btn:hover, .btn:focus
+  .btn:hover
+  // .btn:focus
     background-color: $yellow
 
   .menu__item:hover
@@ -21,6 +22,9 @@
   .material__btn-fill:hover
     transform: translateY(4px)
 
+  .news__slide a:hover .news__title
+    color: $yellow
+
   .footer__email:hover,
   .social__links:hover
     background-position: 5px center
@@ -30,9 +34,14 @@
   .contact__links a:hover svg
     fill: $orange
 
+  .post__icon:hover,
+  .library__icon:hover
+    color: $white
+    svg
+      fill: $white
+
   .page-numbers:hover,
-  .post__data a:hover,
-  .library__left a:hover,
+  // .library__left a:hover,
   .video__data:hover a
     color: $orange
     text-shadow: 1px 1px 0 rgba($text, 0.6)
