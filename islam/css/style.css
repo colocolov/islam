@@ -1819,6 +1819,59 @@ input {
   min-height: 560px;
 }
 
+.error {
+  background-color: #000000;
+}
+.error__container {
+  position: relative;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+.error__container::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  width: 539px;
+  height: 539px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-filter: blur(250px);
+  filter: blur(250px);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.error__bg {
+  position: relative;
+  width: 486px;
+  margin-bottom: 30px;
+}
+.error__bg img {
+  margin: 0 auto;
+}
+.error__head {
+  font-size: 0;
+  width: 0;
+  height: 0;
+  line-height: 0;
+}
+.error__text {
+  font-family: "CormorantInfant";
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-bottom: 60px;
+}
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2409,6 +2462,12 @@ input {
   .post-video__video iframe {
     min-height: 360px;
   }
+
+  .error__text {
+    font-size: 36px;
+    letter-spacing: normal;
+    line-height: 1.2;
+  }
 }
 @media (max-width: 576px) {
   .content__head {
@@ -2507,6 +2566,14 @@ input {
 
   .post-video__video iframe {
     min-height: 280px;
+  }
+
+  .error__bg {
+    width: 100%;
+  }
+
+  .error__text {
+    font-size: 28px;
   }
 }
 @media (max-width: 480px) {

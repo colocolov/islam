@@ -1,0 +1,40 @@
+.error
+  // position: relative
+  background-color: $black
+  &__container
+    position: relative
+    // padding-top: 150px
+    padding-bottom: 100px
+    display: flex
+    flex-direction: column
+    align-items: center
+    color: $white
+    &::before
+      position: absolute
+      content: ''
+      top: 0
+      left: 50%
+      width: 539px
+      height: 539px
+      background: rgba(255, 255, 255, 0.5)
+      filter: blur(250px)
+      transform: translateX(-50%)
+  &__bg
+    position: relative
+    width: 486px
+    margin-bottom: 30px
+    img
+      margin: 0 auto
+  &__head
+    font-size: 0
+    width: 0
+    height: 0
+    line-height: 0
+
+  &__text
+    font-family: 'CormorantInfant'
+    font-size: 56px
+    text-align: center
+    letter-spacing: 0.06em
+    margin-bottom: 60px
+  &__btn
