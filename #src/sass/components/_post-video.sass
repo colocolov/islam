@@ -1,0 +1,30 @@
+.post-video
+  padding-bottom: 80px
+  &__container
+  &__title
+    color: $orange
+    text-transform: none
+  &__content
+    padding: 40px 0
+    background: linear-gradient(90deg, #FFE259 0%, #FFA751 100%)
+    font-family: 'NotoSans'
+    @include font(500, 20, 24)
+    // color: #000000;
+    margin-bottom: 80px
+    h2, h3
+      margin-bottom: 20px
+      font-family: 'CormorantInfant'
+      @include font(700, 40, 48)
+
+    p:not(:last-child)
+      margin-bottom: 20px
+
+  &__video
+    display: flex
+    justify-content: center
+    flex: 1 1 auto
+    border-radius: 20px
+    overflow: hidden
+    iframe
+      width: 100%
+      min-height: 560px
