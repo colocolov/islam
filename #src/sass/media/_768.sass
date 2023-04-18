@@ -84,6 +84,8 @@
   .contact__info
     margin-right: 0
     text-align: center
+  .wpcf7-form
+    margin-right: 0
   // .contact__email
   //   order: 2
   // .contact__tel
@@ -94,6 +96,12 @@
   .page-numbers.current::before
     top: 3px
 
+  .post__data
+    flex-wrap: wrap
+    justify-content: space-between
+    flex-direction: row
+  .post__link
+    width: 100%
   .post__image
     margin-right: 0
   .post__img
@@ -103,10 +111,10 @@
     flex-direction: column
   .post__date
     align-self: flex-end
-  .post__icon
-    display: none
   .post__descr
     line-height: 1.3
+    margin-right: 30px
+    width: calc( 100% - 150px )
 
   .post__img--study
     margin-right: 0
@@ -119,7 +127,7 @@
   .library__date
     font-size: 18px
   .library__icon
-    display: none
+    // display: none
   .library__left
     margin-right: 0
   .library__data
